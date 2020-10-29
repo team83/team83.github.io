@@ -7,6 +7,7 @@
     "analyze": "cross-env ANALYZE=1 umi build",
     "build": "umi build",
     "deploy": "npm run site && npm run gh-pages",
+    "docker:dev": "docker-compose -f ./docker/docker-compose.dev.yml up",
     "docker:build": "docker build  -t  skeleton-ant-design ./",
     "docker:push": "npm run docker:build && npm run docker:tag && docker push team83.iptime.org:5000/skeleton-ant-design",
     "docker:tag": "docker tag skeleton-ant-design team83.iptime.org:5000/skeleton-ant-design",

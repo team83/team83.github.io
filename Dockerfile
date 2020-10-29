@@ -7,9 +7,7 @@ RUN yarn
 
 COPY ./ ./
 
-RUN npm run test:all
-
-RUN npm run fetch:blocks
+#RUN npm run test:all
 
 RUN npm run build
 
